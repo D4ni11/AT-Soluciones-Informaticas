@@ -1,0 +1,181 @@
+/* ==== ESTILOS GENERALES ==== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+h1, h2, h3 {
+  margin: 0.5rem 0;
+}
+
+section {
+  padding: 3rem 2rem;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+/* ==== HEADER ==== */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #111;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.nav-menu a {
+  margin: 0 0.5rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.cart-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* ==== HERO ==== */
+.hero {
+  background-image: url("https://www.infinit.com.uy/imgs/presentaciones/presentaciones0_6941.jpg?1745463371");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; /* <-- Esto asegura el ajuste */
+  min-height: 300px;
+  max-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+}
+
+.btn-primary {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background: #ff6600;
+  color: #fff;
+  font-size: 1rem;
+  position: bottom;
+}
+
+/* ==== PRODUCTOS ==== */
+.products h2 {
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden; 
+  text-align: center; 
+  transition: transform 0.2s; 
+  background: #fff;
+  display: flex; /* Usa flexbox para alinear el contenido */
+  flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+  justify-content: space-between; /* Asegura que el contenido se distribuya verticalmente */
+  min-height: 400px;      /* Asegura que todas las tarjetas tengan la misma altura */
+  max-width: 300px;       /* Limita el ancho máximo de cada tarjeta */
+  margin: 0 auto;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  width: 100%;        /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  object-fit: cover;
+}
+
+.product-card h3 {
+  margin: 0.5rem 0;
+}
+
+.product-card button {
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  background: #111;
+  color: #fff;
+}
+
+/* ==== CATEGORÍAS ==== */
+.categories h2 {
+  text-align: center;
+}
+
+.category-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.category-card {
+  background: #f4f4f4;
+  padding: 2rem;
+  border-radius: 10px;
+  flex: 1 1 200px;
+  text-align: center;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.category-card:hover {
+  background: #ddd;
+}
+
+/* ==== OFERTAS ==== */
+.offers {
+  text-align: center;
+  background: #ff6600;
+  color: #fff;
+  padding: 3rem 2rem;
+}
+
+.btn-secondary {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background: #fff;
+  color: #ff6600;
+  font-weight: bold;
+}
+
+/* ==== FOOTER ==== */
+.footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.footer a {
+  color: #ff6600;
+  text-decoration: none;
+}
