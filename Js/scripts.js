@@ -19,7 +19,7 @@ function displayProducts() {
       <h3>${p.name}</h3>
       <p>$${p.price}</p>
       <div class="product-actions">
-       <a href="Html/productos.html" class="btn-ver-mas"> <button>Ver más</button> </a>
+       <a href="productos.html" class="btn-ver-mas"> <button>Ver más</button> </a>
       </div>
     `;
     grid.appendChild(card);
