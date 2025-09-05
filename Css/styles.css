@@ -179,3 +179,9 @@ button {
   color: #ff6600;
   text-decoration: none;
 }
+
+.footer img {
+  height: 30px;
+  margin: 0 10px;
+  vertical-align: middle;
+}
