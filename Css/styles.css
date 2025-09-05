@@ -60,7 +60,7 @@ button {
 .hero {
   background-image: url("https://www.infinit.com.uy/imgs/presentaciones/presentaciones0_6941.jpg?1745463371");
   background-position: center center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; /* <-- Esto evita que la imagen se repita */
   background-size: cover; /* <-- Esto asegura el ajuste */
   min-height: 300px;
   max-height: 500px;
