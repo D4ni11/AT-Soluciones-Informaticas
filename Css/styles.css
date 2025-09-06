@@ -198,9 +198,21 @@ nav ul {
   gap: 20px;
 }
 
+/* Celulares */
 @media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
+  .nav-menu a {
+    font-size: 0.9rem;
+    margin: 0 0.2rem;
+  }
+
+  .hero {
+    height: 60vh; /* menos alto en pantallas pequeñas */
+  }
+}
+
+/* Tablets */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .nav-menu a {
+    font-size: 1rem;
   }
 }
