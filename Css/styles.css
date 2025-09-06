@@ -1,8 +1,8 @@
 /* ==== ICONO DE LA PÁGINA ==== */
 
 .logo-icon {
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
 }
 
 /* ==== ESTILOS GENERALES ==== */
@@ -23,7 +23,7 @@ section {
 button {
   cursor: pointer;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.25rem;
 }
 
 /* ==== HEADER ==== */
@@ -40,8 +40,8 @@ button {
 }
 
 .logo img {
-  height: 40px;
-  margin-right: 10px;
+  height: 2.5rem;
+  margin-right: 0.5rem;
   vertical-align: middle;
 }
 
@@ -62,8 +62,8 @@ button {
   background-position: center center;
   background-repeat: no-repeat; /* <-- Esto evita que la imagen se repita */
   background-size: cover; /* <-- Esto asegura el ajuste */
-  min-height: 300px;
-  max-height: 500px;
+  min-height: 18.75rem;
+  max-height: 31.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,14 +93,14 @@ button {
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(13.75rem, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
 }
 
 .product-card {
-  border: 1px solid #ddd;
-  border-radius: 10px;
+  border: 0.063px solid #ddd;
+  border-radius: 0.625rem;
   overflow: hidden; 
   text-align: center; 
   transition: transform 0.2s; 
@@ -108,8 +108,8 @@ button {
   display: flex; /* Usa flexbox para alinear el contenido */
   flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
   justify-content: space-between; /* Asegura que el contenido se distribuya verticalmente */
-  min-height: 400px;      /* Asegura que todas las tarjetas tengan la misma altura */
-  max-width: 300px;       /* Limita el ancho máximo de cada tarjeta */
+  min-height: 25rem;      /* Asegura que todas las tarjetas tengan la misma altura */
+  max-width: 18.75rem;       /* Limita el ancho máximo de cada tarjeta */
   margin: 0 auto;
 }
 
@@ -148,8 +148,8 @@ button {
 .category-card {
   background: #f4f4f4;
   padding: 2rem;
-  border-radius: 10px;
-  flex: 1 1 200px;
+  border-radius: 0.625rem;
+  flex: 1 1 12.5rem;
   text-align: center;
   font-weight: bold;
   transition: background 0.3s;
@@ -188,7 +188,19 @@ button {
 }
 
 .footer img {
-  height: 30px;
-  margin: 0 10px;
+  height: 1.875rem;
+  margin: 0 0.625rem;
   vertical-align: middle;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
