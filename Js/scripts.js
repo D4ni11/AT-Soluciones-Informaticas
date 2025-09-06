@@ -1,7 +1,18 @@
 // ==== LISTA DE PRODUCTOS (simulación) ====
-const products = [
-  { id: 1, name: "Mini Pc HP Elitebook 800 G3 Tiny", price: 383, image: "https://www.infinit.com.uy/imgs/productos/productos3_37992.jpg" },
-  { id: 2, name: "Notebook DELL Latitude 5400", price: 399, image: "https://www.infinit.com.uy/imgs/productos/productos33_38622.jpg" },
+ const products = [
+  {
+    name: "Mini Pc HP Elitebook 800 G3 Tiny",
+    price: 350,
+    image: "https://www.infinit.com.uy/imgs/productos/productos3_37992.jpg",
+    link: "Productos/Mini-Pc-HP-Elitebook-800-G3-Tiny.html"
+  },
+  {
+    name: "Notebook DELL Latitude 5400",
+    price: 399,
+    image: "https://www.infinit.com.uy/imgs/productos/productos33_38622.jpg",
+    link: "Productos/Notebook-DELL-Latitude-5400.html"
+  },
+
   { id: 3, name: "PC Gamer AMD Ryzen 5 5600G", price: 405, image: "https://www.infinit.com.uy/imgs/productos/productos3_22522.jpg" },
   { id: 4, name: "Notebook DELL Latitude 7390", price: 428, image: "https://www.infinit.com.uy/imgs/productos/productos33_38679.jpg" },
   { id: 5, name: "Notebook HP 15-fc0037wm", price: 480, image: "https://www.infinit.com.uy/imgs/productos/productos33_36527.jpg" },
@@ -15,15 +26,16 @@ const products = [
 // ==== MOSTRAR PRODUCTOS EN LA GRILLA ====
 function displayProducts() {
   const grid = document.getElementById("productGrid");
+  grid.innerHTML = ""; // limpiar por si ya hay productos
   products.forEach(p => {
     const card = document.createElement("div");
     card.className = "product-card";
     card.innerHTML = `
       <img src="${p.image}" alt="${p.name}">
       <h3>${p.name}</h3>
-      <p> USD ${p.price}</p>
+      <p>USD ${p.price}</p>
       <div class="product-actions">
-       <a href="productos.html" class="btn-ver-mas"> <button>Ver más</button> </a>
+        <a href="${p.link}" class="btn-ver-mas"><button>Ver más</button></a>
       </div>
     `;
     grid.appendChild(card);
