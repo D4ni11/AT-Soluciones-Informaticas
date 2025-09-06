@@ -49,6 +49,10 @@ button {
   margin: 0 0.5rem;
   color: #fff;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* para que baje en móviles */
 }
 
 .cart-icon {
