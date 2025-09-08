@@ -55,6 +55,14 @@ button {
   flex-wrap: wrap; /* para que baje en móviles */
 }
 
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem; /* Espacio entre los enlaces */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .cart-icon {
   font-size: 1.5rem;
   cursor: pointer;
