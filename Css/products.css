@@ -1,0 +1,214 @@
+.Mini-Pc-HP-Elitebook-800-G3-Tiny {
+    background: url(../Images/Mini-Pc-HP-Elitebook-800-G3-Tiny.png) no-repeat center;
+    background-size: contain;
+}
+.Mini-Pc-HP-Elitebook-800-G3-Tiny .Mini-Pc-HP-Elitebook-800-G3-Tiny-img {
+  display: block;
+  max-width: 500px; 
+  width: 100%;
+  height: auto;
+  margin: 0 auto 2rem auto;
+  object-fit: contain; /* evita recortes */
+}
+
+.product-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin: 2rem auto 0 auto;
+  max-width: 1100px; /* Ajusta según tu preferencia */
+}
+
+.product-detail img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Mejora visual para la lista de especificaciones */
+.product-specs h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #ff6600;
+  letter-spacing: 1px;
+}
+
+.product-specs ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.product-specs ul > li {
+  position: relative;
+  padding-left: 1.5em;
+  margin-bottom: 0.7em;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.product-specs ul > li:before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #ff6600;
+  font-size: 1em;
+  top: 0.1em;
+}
+
+.product-specs ul ul {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+  padding-left: 1.5em;
+}
+
+.product-specs ul ul li:before {
+  content: "•";
+  color: #888;
+  font-size: 1em;
+}
+
+.product-specs button.btn-primary {
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 0.3em;
+  padding: 0.7em 1.5em;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.product-specs button.btn-primary:hover {
+  background: #e05500;
+}
+
+@media (max-width: 768px) {
+  .product-detail {
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-info {
+    min-width: unset;
+    width: 100%;
+  }
+}
+
+.product-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-secondimages {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.product-secondimages img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  transition: border 0.2s;
+}
+
+.product-secondimages img:hover {
+  border: 2px solid #ff6600;
+}
+
+.product-info {
+  flex: 1;
+  min-width: 300px;
+  max-width: 420px; /* Limita el ancho máximo */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem 2rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.product-info .brand-logo {
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+  max-width: fit-content;
+}
+
+.product-status {
+  display: inline-block;
+  background: #222;
+  color: #fff;
+  font-size: 0.85rem;
+  padding: 0.2em 0.8em;
+  border-radius: 0.5em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.product-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0.5em 0;
+}
+
+.product-guarantee {
+  font-size: 1rem;
+  color: #444;
+}
+
+.product-options {
+  margin: 0.5em 0;
+  font-size: 1rem;
+}
+.product-measure {
+  display: inline-block;
+  background: #eee;
+  border-radius: 0.3em;
+  padding: 0.2em 0.7em;
+  margin-left: 0.5em;
+  font-weight: bold;
+}
+
+.product-price-box {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5em;
+  margin: 1em 0;
+}
+.product-price-label {
+  font-size: 1.1rem;
+  color: #222;
+}
+.product-price {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #ff6600;
+}
+.product-price-iva {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.btn-secondary {
+  background: #eee;
+  color: #888;
+  border: none;
+  border-radius: 0.3em;
+  padding: 0.7em 1.5em;
+  font-size: 1.1rem;
+  cursor: not-allowed;
+  font-weight: bold;
+}

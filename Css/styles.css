@@ -96,6 +96,7 @@ button {
   color: #fff;
   font-size: 1rem;
   position: bottom;
+  max-width: fit-content;
 }
 
 /* ==== PRODUCTOS ==== */

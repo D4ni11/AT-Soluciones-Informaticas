@@ -2,7 +2,7 @@
  const products = [
   {
     name: "Mini Pc HP Elitebook 800 G3 Tiny",
-    price: 350,
+    price: 450,
     image: "https://www.infinit.com.uy/imgs/productos/productos3_37992.jpg",
     link: "Productos/Mini-Pc-HP-Elitebook-800-G3-Tiny.html"
   },
@@ -49,3 +49,5 @@ function addToCart(productName) {
 
 // ==== INICIO ====
 window.onload = displayProducts;
+
+
