@@ -70,8 +70,8 @@ button {
 
 /* ==== HERO ==== */
 .hero {
-  background-image: url("https://www.infinit.com.uy/imgs/presentaciones/presentaciones0_6941.jpg?1745463371");
-  background-position: center center;
+  background-image: url("../img/presentaciones0_6941.jpg");
+  background-position: center;
   background-repeat: no-repeat; /* <-- Esto evita que la imagen se repita */
   background-size: cover; /* <-- Esto asegura el ajuste */
   display: flex;
@@ -81,7 +81,7 @@ button {
   min-height: 350px;
   color: #fff;
   padding: 3rem 2rem;
-  text-align: center;
+  position: relative;
 }
 
 .hero-content {
@@ -225,8 +225,12 @@ nav ul {
 
 @media (max-width: 768px) {
   .hero {
-    padding: 1.5rem 0.5rem;
     min-height: 180px;
+    padding: 1.5rem 0.5rem;
+    background-position: center top;
+  }
+  .hero-content {
+    padding: 0.7rem;
   }
   .hero-title-mobile {
     display: block;
@@ -251,8 +255,9 @@ nav ul {
 
 @media (max-width: 480px) {
   .hero {
-    padding: 1rem 0.2rem;
     min-height: 120px;
+    padding: 1rem 0.2rem;
+    background-position: center top;
   }
   .hero-title-mobile {
     font-size: 1.1rem;
