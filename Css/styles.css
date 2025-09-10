@@ -74,20 +74,21 @@ button {
   background-position: center center;
   background-repeat: no-repeat; /* <-- Esto evita que la imagen se repita */
   background-size: cover; /* <-- Esto asegura el ajuste */
-  min-height: 18.75rem;
-  max-height: 31.25rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-height: 350px;
   color: #fff;
+  padding: 3rem 2rem;
   text-align: center;
-  overflow: hidden;
-  position: relative;
 }
 
-.hero-content h1 {
-  font-size: 2.5rem;
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
 }
+
 
 .btn-primary {
   margin-top: 1rem;
@@ -211,21 +212,52 @@ nav ul {
   gap: 20px;
 }
 
-/* Celulares */
-@media (max-width: 768px) {
-  .nav-menu a {
-    font-size: 0.9rem;
-    margin: 0 0.2rem;
-  }
-
+/* Responsive para tablets y celulares */
+@media (max-width: 1100px) {
   .hero {
-    height: 60vh; /* menos alto en pantallas pequeñas */
+    padding: 2rem 1rem;
+    min-height: 250px;
+  }
+  .hero-content {
+    max-width: 90vw;
   }
 }
 
-/* Tablets */
-@media (min-width: 769px) and (max-width: 1200px) {
-  .nav-menu a {
+@media (max-width: 768px) {
+  .hero {
+    padding: 1.5rem 0.5rem;
+    min-height: 180px;
+  }
+  .hero-title-mobile {
+    display: block;
+    font-size: 1.4rem;
+    margin: 1.2rem 0 0.5rem 0;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    padding: 0 0.5rem;
+  }
+  .hero-title-desktop {
+    display: none;
+  }
+  .hero-content p {
     font-size: 1rem;
+  }
+  .btn-primary {
+    font-size: 1rem;
+    padding: 0.7em 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 1rem 0.2rem;
+    min-height: 120px;
+  }
+  .hero-title-mobile {
+    font-size: 1.1rem;
+  }
+  .hero-content p {
+    font-size: 0.95rem;
   }
 }
