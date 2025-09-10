@@ -71,7 +71,7 @@ button {
 /* ==== HERO ==== */
 .hero {
   background-image: url("../img/presentaciones0_6941.jpg");
-  background-position: center;
+  background-position: center top; /* <-- Ajusta la posición de la imagen */
   background-repeat: no-repeat; /* <-- Esto evita que la imagen se repita */
   background-size: cover; /* <-- Esto asegura el ajuste */
   display: flex;
@@ -216,7 +216,8 @@ nav ul {
 @media (max-width: 1100px) {
   .hero {
     padding: 2rem 1rem;
-    min-height: 250px;
+    min-height: 200px;
+    background-position: center top;
   }
   .hero-content {
     max-width: 90vw;
