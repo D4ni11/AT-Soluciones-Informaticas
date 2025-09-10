@@ -13,9 +13,22 @@
     link: "Productos/Notebook-DELL-Latitude-5400.html"
   },
 
-  { id: 3, name: "PC Gamer AMD Ryzen 5 5600G", price: 405, image: "https://www.infinit.com.uy/imgs/productos/productos3_22522.jpg" },
-  { id: 4, name: "Notebook DELL Latitude 7390", price: 428, image: "https://www.infinit.com.uy/imgs/productos/productos33_38679.jpg" },
-  { id: 5, name: "Notebook HP 15-fc0037wm", price: 480, image: "https://www.infinit.com.uy/imgs/productos/productos33_36527.jpg" },
+  { name: "PC Gamer AMD Ryzen 5 5600G", 
+    price: 405, 
+    image: "https://www.infinit.com.uy/imgs/productos/productos3_22522.jpg",
+    link: "Productos/PC-Gamer-AMD-Ryzen-5-5600G.html"
+  },
+
+  { name: "Notebook DELL Latitude 7390", 
+    price: 428, 
+    image: "https://www.infinit.com.uy/imgs/productos/productos33_38679.jpg",
+    link: "Productos/Notebook-DELL-Latitude-7390.html"
+  },
+  { name: "Notebook HP 15-fc0037wm", 
+    price: 480, 
+    image: "https://www.infinit.com.uy/imgs/productos/productos33_36527.jpg",
+    link: "Productos/Notebook-HP-15-fc0037wm.html"
+  },
   { id: 6, name: "APPLE Macbook Air BMT12LL/A 2017", price: 501, image: "https://www.infinit.com.uy/imgs/productos/productos33_34109.jpg" },
   { id: 7, name: "Notebook ASUS Vivobook Go 15 E1504GA-NJ535W", price: 547, image: "https://www.infinit.com.uy/imgs/productos/productos33_38450.jpg" },
   { id: 8, name: "Notebook DELL Latitude 3420", price: 613, image: "https://www.infinit.com.uy/imgs/productos/productos33_31003.jpg" },
