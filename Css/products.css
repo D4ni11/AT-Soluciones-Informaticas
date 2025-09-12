@@ -317,3 +317,20 @@
     height: 38px;
   }
 }
+
+/* Animación de desvanecido para la imagen principal */
+.main-image {
+  transition: opacity 0.4s, transform 0.4s;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.main-image.slide-out {
+  opacity: 0;
+  transform: translateX(-60px);
+}
+
+.main-image.slide-in {
+  opacity: 0;
+  transform: translateX(60px);
+}

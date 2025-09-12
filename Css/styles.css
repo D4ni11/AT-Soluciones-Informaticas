@@ -267,3 +267,48 @@ nav ul {
     font-size: 0.95rem;
   }
 }
+
+.mini-cart {
+  display: none;
+  position: absolute;
+  top: 60px; /* Ajusta según tu header */
+  right: 30px;
+  width: 320px;
+  background: #fff;
+  color: #222;
+  border: 1px solid #ddd;
+  border-radius: 0.5em;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  z-index: 1000;
+  padding: 1rem;
+  font-size: 1rem;
+}
+.mini-cart.active {
+  display: block;
+}
+.mini-cart h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: #ff6600;
+}
+.mini-cart ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+.mini-cart li {
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.3em;
+}
+.mini-cart .empty {
+  color: #888;
+  text-align: center;
+}
+.mini-cart .close-cart {
+  float: right;
+  cursor: pointer;
+  font-weight: bold;
+  color: #ff6600;
+  font-size: 1.2em;
+}

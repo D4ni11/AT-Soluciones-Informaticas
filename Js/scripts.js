@@ -64,3 +64,48 @@ function addToCart(productName) {
 window.onload = displayProducts;
 
 
+// ==== CARRITO MINI ====
+document.addEventListener('DOMContentLoaded', function() {
+  const cartIcon = document.querySelector('.cart-icon');
+  const miniCart = document.getElementById('miniCart');
+
+  // Mostrar/ocultar mini carrito al hacer clic en el icono
+  cartIcon.addEventListener('click', function() {
+    if (miniCart.classList.contains('active')) {
+      miniCart.classList.remove('active');
+    } else {
+      mostrarMiniCarrito();
+      miniCart.classList.add('active');
+    }
+  });
+
+  // Cerrar mini carrito al hacer clic fuera
+  document.addEventListener('click', function(e) {
+    if (!miniCart.contains(e.target) && !cartIcon.contains(e.target)) {
+      miniCart.classList.remove('active');
+    }
+  });
+
+  // Función para mostrar el contenido del carrito
+  function mostrarMiniCarrito() {
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    // Si guardas IDs, aquí deberías tener acceso a los productos
+    // Ejemplo simple: solo muestra los IDs
+    if (carrito.length === 0) {
+      miniCart.innerHTML = '<span class="close-cart" title="Cerrar">&times;</span><h3>Carrito</h3><div class="empty">El carrito está vacío</div>';
+      return;
+    }
+    let html = '<span class="close-cart" title="Cerrar">&times;</span><h3>Carrito</h3><ul>';
+    carrito.forEach((id, idx) => {
+      html += `<li>Producto ${id}</li>`;
+    });
+    html += '</ul>';
+    html += `<button class="btn-primary" onclick="window.location.href='carrito.html'">Ver carrito completo</button>`;
+    miniCart.innerHTML = html;
+
+    // Botón para cerrar el mini carrito
+    miniCart.querySelector('.close-cart').onclick = () => miniCart.classList.remove('active');
+  }
+});
+
+
