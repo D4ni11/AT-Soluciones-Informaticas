@@ -1,8 +1,8 @@
-.Mini-Pc-HP-Elitebook-800-G3-Tiny {
+.product-section {
     background: url(../Images/Mini-Pc-HP-Elitebook-800-G3-Tiny.png) no-repeat center;
     background-size: contain;
 }
-.Mini-Pc-HP-Elitebook-800-G3-Tiny .Mini-Pc-HP-Elitebook-800-G3-Tiny-img {
+.product-section .product-section-img {
   display: block;
   max-width: 500px; 
   width: 100%;

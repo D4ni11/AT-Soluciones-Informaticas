@@ -14,7 +14,7 @@
   },
 
   { name: "PC Gamer AMD Ryzen 5 5600G", 
-    price: 405, 
+    price: 425, 
     image: "https://www.infinit.com.uy/imgs/productos/productos3_22522.jpg",
     link: "Productos/PC-Gamer-AMD-Ryzen-5-5600G.html"
   },
@@ -29,7 +29,11 @@
     image: "https://www.infinit.com.uy/imgs/productos/productos33_36527.jpg",
     link: "Productos/Notebook-HP-15-fc0037wm.html"
   },
-  { id: 6, name: "APPLE Macbook Air BMT12LL/A 2017", price: 501, image: "https://www.infinit.com.uy/imgs/productos/productos33_34109.jpg" },
+  { name: "Equipo Pc Refabricado Hp Elitedesk 705 Amd A10-8770 3.8Ghz Ram 16Gb Ssd 240G Video Vega 7 Wifi Coa Win10 64bit Pro", 
+    price: 295, 
+    image: "https://www.infinit.com.uy/imgs/productos/productos33_21173.jpg",
+    link: "Productos/Equipo-Pc-Refabricado-Hp-Elitedesk-705-Amd-A10-8770-3.8Ghz-Ram-16Gb-Ssd-240G-Video-Vega-7-Wifi-Coa-Win10-64bit-Pro.html"
+  },
   { id: 7, name: "Notebook ASUS Vivobook Go 15 E1504GA-NJ535W", price: 547, image: "https://www.infinit.com.uy/imgs/productos/productos33_38450.jpg" },
   { id: 8, name: "Notebook DELL Latitude 3420", price: 613, image: "https://www.infinit.com.uy/imgs/productos/productos33_31003.jpg" },
   { id: 9, name: "Equipo PC INTEL Core i3 13100 13va Gen", price: 576, image: "https://www.infinit.com.uy/imgs/productos/productos3_38323.jpg" },
