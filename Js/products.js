@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Slide out a la izquierda
         mainImage.classList.add('slide-out');
         setTimeout(() => {
-          // Change image and slide in from the right
+          // Cambia la imagen y la desliza a la derecha
           mainImage.src = this.src;
           mainImage.alt = this.alt;
           mainImage.classList.remove('slide-out');
