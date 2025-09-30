@@ -34,8 +34,17 @@
     image: "https://www.infinit.com.uy/imgs/productos/productos33_21173.jpg",
     link: "Productos/Equipo-Pc-Refabricado-Hp-Elitedesk-705-Amd-A10-8770-3.8Ghz-Ram-16Gb-Ssd-240G-Video-Vega-7-Wifi-Coa-Win10-64bit-Pro.html"
   },
-  { id: 7, name: "Notebook ASUS Vivobook Go 15 E1504GA-NJ535W", price: 547, image: "https://www.infinit.com.uy/imgs/productos/productos33_38450.jpg" },
-  { id: 8, name: "Notebook DELL Latitude 3420", price: 613, image: "https://www.infinit.com.uy/imgs/productos/productos33_31003.jpg" },
+  { name: "Equipo Ultra Mini Pc Lenovo Tiny M83 Intel Core i5 4590t 2.0Ghz Ram 16Gb Ddr3 Ssd 480Gb Vga y 2x Dp Win10 64bit", 
+    price: 390, 
+    image: "https://www.infinit.com.uy/imgs/productos/productos33_23880.jpg",
+    link: "Productos/Equipo-Ultra-Mini-Pc-Lenovo-Tiny-M83-Intel-Core-i5-4590t-2.0Ghz-Ram-16Gb-Ddr3-Ssd-480Gb-Vga-y-2x-Dp-Win10-64bit.html"
+  },
+
+  { name: "PC Gamer AMD Ryzen 3 5300G (4 Núcleos) - RAM 16Gb - Ssd 512Gb - Wifi/Bt Windows 11 Pro", 
+    price: 613, 
+    image: "https://www.infinit.com.uy/imgs/productos/productos33_35604.jpg",
+    link: "Productos/PC-Gamer-AMD-Ryzen-3-5300G-(4 Núcleos)-RAM-16Gb-Ssd 512Gb-Wifi-Bt-Windows-11-Pro.html"
+  },
   { id: 9, name: "Equipo PC INTEL Core i3 13100 13va Gen", price: 576, image: "https://www.infinit.com.uy/imgs/productos/productos3_38323.jpg" },
   { id: 10, name: "PC Gamer AMD Ryzen 7 5700G", price: 636, image: "https://www.infinit.com.uy/imgs/productos/productos3_19809.jpg" }
 ];
@@ -50,7 +59,7 @@ function displayProducts() {
     card.innerHTML = `
       <img src="${p.image}" alt="${p.name}">
       <h3>${p.name}</h3>
-      <p>USD ${p.price}</p>
+      <p><b>USD ${p.price}</b></p>
       <div class="product-actions">
         <a href="${p.link}" class="btn-ver-mas"><button>Ver más</button></a>
       </div>
@@ -112,4 +121,20 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  const dropdownToggle = document.querySelector('.dropdown-toggle');
+  const dropdownMenu = document.querySelector('.dropdown-menu');
+  if (dropdownToggle && dropdownMenu) {
+    dropdownToggle.addEventListener('click', function(e) {
+      e.preventDefault();
+      dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+    });
+    // Opcional: cerrar al hacer clic fuera
+    document.addEventListener('click', function(e) {
+      if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+        dropdownMenu.style.display = 'none';
+      }
+    });
+  }
+});
 
