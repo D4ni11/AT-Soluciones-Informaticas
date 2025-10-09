@@ -121,6 +121,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
+// ==== MENÚ DESPLEGABLE ==== //
 document.addEventListener('DOMContentLoaded', function() {
   const dropdownToggle = document.querySelector('.dropdown-toggle');
   const dropdownMenu = document.querySelector('.dropdown-menu');
