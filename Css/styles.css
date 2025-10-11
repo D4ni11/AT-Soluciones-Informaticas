@@ -320,7 +320,7 @@ nav ul {
   }
   .site-header {
     padding: 0.7rem 0.3rem;
-    width: 100vw;
+    width: 100%;
     box-sizing: border-box;
   }
   .logo {
@@ -343,7 +343,7 @@ nav ul {
   }
   .nav-menu a,
   .nav-menu .dropdown-toggle {
-    width: 95vw;
+    width: 100%;
     text-align: center;
     padding: 0.4em 0; /* Menos espacio vertical */
     margin: 0;
@@ -352,7 +352,7 @@ nav ul {
   .dropdown-menu {
     position: static;
     min-width: unset;
-    width: 95vw;
+    width: 100%;
     box-shadow: none;
     border-radius: 0.3em;
   }
