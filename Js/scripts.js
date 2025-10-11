@@ -13,7 +13,7 @@
     link: "Productos/Notebooks/Notebook-DELL-Latitude-5400.html"
   },
 
-  { name: "PC Gamer AMD Ryzen 5 5600G", 
+  { name: "PC Gamer AMD Ryzen 5 5600G (6 Núcleos) - RAM 8Gb - Ssd 256Gb - Wifi/Bt - Windows", 
     price: 425, 
     image: "https://www.infinit.com.uy/imgs/productos/productos3_22522.jpg",
     link: "Productos/PC/PC-Gamer-AMD-Ryzen-5-5600G.html"
@@ -45,8 +45,16 @@
     image: "https://www.infinit.com.uy/imgs/productos/productos33_35604.jpg",
     link: "Productos/PC/PC-Gamer-AMD-Ryzen-3-5300G-(4 Núcleos)-RAM-16Gb-Ssd 512Gb-Wifi-Bt-Windows-11-Pro.html"
   },
-  { id: 9, name: "Equipo PC INTEL Core i3 13100 13va Gen", price: 576, image: "https://www.infinit.com.uy/imgs/productos/productos3_38323.jpg" },
-  { id: 10, name: "PC Gamer AMD Ryzen 7 5700G", price: 636, image: "https://www.infinit.com.uy/imgs/productos/productos3_19809.jpg" }
+  { name: "PC Gamer AMD Ryzen 3 3200G RAM 8Gb Ddr4 Ssd Nvme 256Gb Monitor 22 100Hz Wifi Bt Teclado Mouse Auricular MousePad W10", 
+    price: 576, 
+    image: "https://www.infinit.com.uy/imgs/productos/productos33_35593.jpg",
+    link: "Productos/PC/PC-Gamer-AMD-Ryzen-3-3200G-RAM-8Gb-Ddr4-Ssd-Nvme-256Gb-Monitor-22-100Hz-Wifi-Bt-Teclado-Mouse-Auricular-MousePad-W10.html"
+   },
+  { name: "PC Gamer AMD Ryzen 7 5700G", 
+    price: 636, 
+    image: "https://www.infinit.com.uy/imgs/productos/productos3_19809.jpg"
+    
+  }
 ];
 
 // ==== MOSTRAR PRODUCTOS EN LA GRILLA ====

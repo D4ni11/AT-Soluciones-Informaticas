@@ -318,6 +318,49 @@ nav ul {
     font-size: 1rem;
     padding: 0.7em 1.2em;
   }
+  .site-header {
+    padding: 0.7rem 0.3rem;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .logo img {
+    height: 28px;
+    margin-bottom: 0.2rem;
+  }
+  .nav-menu {
+    flex-direction: column;
+    gap: 0.3rem;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  .nav-menu a,
+  .nav-menu .dropdown-toggle {
+    width: 95vw;
+    text-align: center;
+    padding: 0.5em 0;
+    margin: 0;
+    font-size: 1rem;
+  }
+  .dropdown-menu {
+    position: static;
+    min-width: unset;
+    width: 95vw;
+    box-shadow: none;
+    border-radius: 0.3em;
+  }
+  .cart-icon {
+    margin: 0.5rem auto 0 auto;
+    align-self: center;
+    font-size: 1.3rem;
+  }
 }
 
 @media (max-width: 480px) {
